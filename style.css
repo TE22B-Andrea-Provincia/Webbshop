@@ -1,0 +1,129 @@
+body{
+    background-color: #F7E1FB;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin: 0px;
+}
+h1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: 'Ingrid Darling', sans-serif;
+    font-size: 65px;
+    font-weight: 100;
+    text-align: center;
+}
+nav{
+    background-color: #573F66;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    font-family: 'Ingrid Darling';
+    font-size: 40px;
+    font-weight: 100;
+    color: white;
+    margin-left: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+main{
+    overflow: scroll;
+    width: auto;
+    height: 900px;
+}
+.bilder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 20px;    
+}
+.an{
+    height: 400px;
+    width: 300px;
+}
+p, a{
+    color: rgb(255, 254, 254);
+    font-family: 'Ingrid Darling';
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: center;
+    margin: 10px;
+}
+h3, h4{
+    color: rgb(136, 42, 146);
+    font-weight: lighter;
+    text-align: center;
+    margin: 10px;
+    font-size: 17px;
+
+}
+footer{
+    background-color: #573F66;
+}
+footer > p {
+    font-family: 'Adorable';
+}
+/* Dator layout om bredden är minst 1008px */
+@media screen and (min-width: 1008px) {
+    .bilder{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/* Media Query for iPhones and smaller devices */
+@media (min-width: 375px)and (max-width: 767px) {
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        line-height: normal;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .bilder {
+        grid-template-columns: 1fr;
+    }
+    footer{
+        height: 70px;
+    }
+    .an {
+        width: 230px;
+        height: 320px;
+    }
+    p,a {
+        font-size: 23px;
+    }
+    main{
+        overflow: scroll;
+        height: 581px;
+    }
+}
+@media (min-width: 768px)and (max-width: 1007px) {
+    h1 {
+        font-size: 55px;
+    }
+    h2 {
+        line-height: normal;
+        font-size: 50px;
+        margin-left: 20px;
+    }
+    .bilder {
+        grid-template-columns: 1fr 1fr;
+    }
+    footer{
+        height: 70px;
+    }
+    .an {
+        width: 300px;
+        height: 400px;
+    }
+    p,a {
+        font-size: 30px;
+    }
+    main{
+        overflow: scroll;
+        height: 782px;
+    }
+}
